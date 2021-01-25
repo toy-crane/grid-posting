@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>place items</title>
+		<style>
+			body {
+				margin: 1em;
+				font-size: 1rem;
+				font-family: -apple-system, BlinkMacSystemFont, Bazier Square,
+					Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue,
+					Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+					Noto Color Emoji;
+			}
+			.container {
+				display: grid;
+				margin: 1em 0;
+				border: 3px dotted #4a4a4a;
+				padding: 0.5em;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 100px 100px 100px;
+			}
+			.box {
+				background-color: #3f29ef;
+				color: white;
+				padding: 1em;
+				font-size: 2em;
+				border: 3px solid white;
+			}
+			.a {
+				grid-column: 1 / 4;
+			}
+			.b {
+				grid-column: 1 / 3;
+				grid-row: 2 / 4;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box a">A</div>
+			<div class="box b">B</div>
+			<div class="box c">C</div>
+			<div class="box d">D</div>
+			<div class="box e">E</div>
+			<div class="box f">F</div>
+			<div class="box g">G</div>
+			<div class="box h">H</div>
+			<div class="box i">I</div>
+		</div>
+	</body>
+</html>
